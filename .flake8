@@ -1,0 +1,8 @@
+[flake8]
+ignore =
+    ; line too long
+    E501,
+    ; imported but unused
+    F401,
+    ; assigned to but never used
+    F841
