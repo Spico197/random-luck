@@ -13,8 +13,10 @@ Good luck and best wishes!
 ## 🚀QuickStart
 
 ```bash
-# installation
+# installation from github (latest) or PyPI
 $ pip install git+https://github.com/Spico197/random-luck.git
+$ pip install randluck -i https://pypi.org/simple
+
 # usage
 $ python
 >>> import randluck
