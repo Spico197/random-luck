@@ -1,5 +1,5 @@
 
-all: format clean test_report build docs
+all: format clean test_report build
 	echo 'finished'
 
 .PHONY: build
@@ -13,11 +13,6 @@ test_upload:
 .PHONY: upload
 upload:
 	python3 -m twine upload --repository pypi dist/*
-
-.PHONY: docs
-docs:
-	cd docs && make clean
-	cd docs && sphinx-apidoc -o . ../rex &&	make html
 
 .PHONY: format
 format:
@@ -36,14 +31,9 @@ test_report:
 
 .PHONY: clean
 clean:
-	cd docs && make clean
 	rm -rf build/
 	rm -rf dist/
 	rm -rf *.egg-info/
 	rm -f .coverage
 	rm -f coverage.xml
 	find . | grep -E '(__pycache__|\.pyc|\.pyo$$)' | xargs rm -rf
-
-.PHONY: serve_docs
-serve_docs:
-	python -m http.server --directory docs/_build/html
