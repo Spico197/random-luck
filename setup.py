@@ -26,15 +26,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.7",
-    install_requires=[
-        "sxtwl>=2.0.4"
-    ],
-    extras_require={
-        'dev': [
-            'pytest',
-            'flake8',
-            'black',
-            'coverage'
-        ]
-    }
+    install_requires=["sxtwl>=2.0.4", "pytz>=2021.3"],
+    extras_require={"dev": ["pytest", "flake8", "black", "coverage"]},
 )

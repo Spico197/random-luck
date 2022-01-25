@@ -8,7 +8,8 @@ import randluck
 
 def test_get_random_seed_lucky_num_birth():
     random_seed = randluck.get_random_seed(
-        utc_datetime=datetime.date(year=1997, month=1, day=1), strategy="lucky_num_by_year"
+        utc_datetime=datetime.date(year=1997, month=1, day=1),
+        strategy="lucky_num_by_year",
     )
     assert random_seed == 5430
 
@@ -22,7 +23,9 @@ def test_get_none_random_seed_lucky_num_birth():
 
     for year in range(1, 10000):
         date.year = year
-        random_seed = randluck.get_random_seed(utc_datetime=date, strategy="lucky_num_by_year")
+        random_seed = randluck.get_random_seed(
+            utc_datetime=date, strategy="lucky_num_by_year"
+        )
         assert random_seed is not None
 
 
