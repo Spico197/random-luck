@@ -1,7 +1,7 @@
 # 🤞 Random Luck
 
 [![Build](https://github.com/Spico197/random-luck/workflows/BuildRandLuck/badge.svg?branch=main)](https://github.com/Spico197/random-luck/actions/workflows/build.yml)
-[![codecov](https://codecov.io/gh/Spico197/random-luck/branch/main/graph/badge.svg?token=4BQQN039YZ)](https://codecov.io/gh/Spico197/random-luck)
+[![codecov](https://codecov.io/gh/Spico197/random-luck/branch/main/graph/badge.svg?token=EXQFxLr1ZC)](https://codecov.io/gh/Spico197/random-luck)
 
 
 > Deep learning is acturally the alchemy.
