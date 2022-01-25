@@ -23,7 +23,9 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
-      run: pip install -e .[dev]
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e .[dev]
     - name: Test
       run: |
         coverage run -m pytest -vv --durations=0 .
